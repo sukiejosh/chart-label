@@ -5,7 +5,7 @@ class CustomDoughnutController extends DoughnutController {
   draw() {
     super.draw();
     const chart = this.chart;
-    const els: any = this.chart.config.options?.elements;
+    const els = this.chart.config.options?.elements;
     if (!els.center) return;
     if (els.center) {
       // Get ctx from string
