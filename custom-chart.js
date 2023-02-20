@@ -1,5 +1,4 @@
 import { DoughnutController } from "chart.js";
-import { createTypedChart } from 'vue-chartjs'
 
 class CustomDoughnutController extends DoughnutController {
   draw() {
@@ -95,6 +94,4 @@ CustomDoughnutController.defaults = DoughnutController.defaults;
 
 const CustomLine = createTypedChart('line', CustomDoughnutController)
 
-export default {
-  components: { CustomChart }
-}
+export { CustomDoughnutController };
